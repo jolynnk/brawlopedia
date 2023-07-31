@@ -1,6 +1,7 @@
 .navbar {
     height: 5rem;
-    background-color: #fdc02c;
+    font-size: 18px;
+    background: #2e93f5;
   }
   
   .navbar nav {

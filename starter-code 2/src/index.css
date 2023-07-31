@@ -23,4 +23,31 @@ body {
 
 h1 {
   text-align: center;
+  font-family: Staatliches;
+  font-size: 50px;
+}
+
+img {
+  padding: 30px;
+}
+
+.card-title {
+  font-family: Permanent Marker;
+  font-size: 25px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  margin: 10px;
+  background-color: #ffcb52;
+  position: relative;
+  left: 52px;
+}
+
+button {
+  /* background-color: #2e93f5; */
+  color: white;
 }
