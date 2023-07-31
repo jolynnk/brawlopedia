@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import CharInfo from "./CharInfo";
 
 const Mainpage = () => {
@@ -20,10 +19,7 @@ const Mainpage = () => {
   return (
     <>
       {/* <h2>{JSON.stringify(charInfo.list)}</h2> */}
-      <h2>Brawlopedia</h2>
-      <ul>
-        <Link to="/page-one/a">A</Link>
-      </ul>
+
       <div className="row">
         {charInfo.map((item) => {
           return (

@@ -10,25 +10,17 @@ const NavBar = () => {
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
-              to="/page-one"
+              to="/mainpage"
             >
-              Page One
+              Brawler List
             </NavLink>
           </li>
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
-              to="/page-two"
+              to="/comparison"
             >
-              Page Two
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={(navData) => (navData.isActive ? styles.active : "")}
-              to="/page-three"
-            >
-              Page Three
+              Compare Brawlers
             </NavLink>
           </li>
         </ul>

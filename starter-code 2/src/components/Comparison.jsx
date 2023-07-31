@@ -1,9 +1,11 @@
 import React from "react";
-import Mainpage from "./Mainpage";
-import Comparison from "./Comparison";
 
 const Comparison = () => {
-  return <div></div>;
+  return (
+    <>
+      <h4>We're still working on this feature, stay tuned!</h4>
+    </>
+  );
 };
 
 export default Comparison;
