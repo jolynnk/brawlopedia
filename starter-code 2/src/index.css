@@ -96,3 +96,13 @@ button {
 #gameImage {
   padding: 50px;
 }
+
+.compareHeader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+  margin: 30px 558px 0px 558px;
+}
