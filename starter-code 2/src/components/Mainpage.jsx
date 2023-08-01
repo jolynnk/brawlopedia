@@ -51,7 +51,8 @@ const Mainpage = () => {
           ))}
         </ul>
       </div> */}
-
+      <br />
+      <br/>
       <div className="row">
         {charInfo.map((item) => {
           return (

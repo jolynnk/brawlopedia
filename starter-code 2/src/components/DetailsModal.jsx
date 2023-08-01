@@ -14,13 +14,13 @@ const DetailsModal = (props) => {
 
         <div className="row">
           <div className="col-md-4"></div>
-          <div className="col-md-4 detailsName">{props.name}</div>
+          <div className="col-md-4 detailsName" id="detailsName">{props.name}</div>
           <div className="col-md-4"></div>
         </div>
 
         <div className="row">
           <div className="col-md-4"></div>
-          <div className="col-md-4 detailsBrawlerType">{props.brawlerType}</div>
+          <div className="col-md-4 detailsBrawlerType" id="detailsBrawlerType">{props.brawlerType}</div>
           <div className="col-md-4"></div>
         </div>
 
@@ -29,13 +29,13 @@ const DetailsModal = (props) => {
         <div className="row">
           <div className="col-md-1"></div>
           <img src={props.gadgetImage} className="col-md-1 gadgetImage"></img>
-          <div className="col-md-1">{props.gadgetName1}</div>
+          <div className="col-md-1 gadgetStarPowerName">{props.gadgetName1}</div>
           <div className="col-md-3">{props.gadgetDesc1}</div>
           <img
             src={props.starPowerImage}
             className="col-md-1 gadgetImage"
           ></img>
-          <div className="col-md-1">{props.starPowerName1}</div>
+          <div className="col-md-1 gadgetStarPowerName">{props.starPowerName1}</div>
           <div className="col-md-3">{props.starPowerDesc1}</div>
           <div className="col-md-1"></div>
         </div>
@@ -43,13 +43,13 @@ const DetailsModal = (props) => {
         <div className="row">
           <div className="col-md-1"></div>
           <img src={props.gadgetImage} className="col-md-1 gadgetImage"></img>
-          <div className="col-md-1">{props.gadgetName2}</div>
+          <div className="col-md-1 gadgetStarPowerName">{props.gadgetName2}</div>
           <div className="col-md-3">{props.gadgetDesc2}</div>
           <img
             src={props.starPowerImage}
             className="col-md-1 gadgetImage"
           ></img>
-          <div className="col-md-1">{props.starPowerName2}</div>
+          <div className="col-md-1 gadgetStarPowerName">{props.starPowerName2}</div>
           <div className="col-md-3">{props.starPowerDesc2}</div>
           <div className="col-md-1"></div>
         </div>

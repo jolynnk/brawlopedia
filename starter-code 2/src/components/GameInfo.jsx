@@ -3,17 +3,20 @@ import React from "react";
 const GameInfo = () => {
   return (
     <>
-      <div className='aboutPage'>
-        <br />
+      <br />
+      <div className="aboutPage">
         <img src="brawlstarswallpaper.jpg" width="500px"></img>
-        <h5>
+        <div>
           Brawl Stars is a multiplayer online battle arena and third-person hero
-          shooter video game developed and published by the Finnish video game
-          company Supercell. It was released worldwide on December 12, 2018, on
-          iOS and Android. The game features various game modes, each with a
-          different objective.
-        </h5>
+          shooter video game developed and published by
+          <br /> the Finnish video game company Supercell. It was released
+          worldwide on December 12, 2018, on iOS and Android.
+          <br />
+          The game features various game modes, each with a different objective.
+        </div>
         <br />
+        <hr></hr>
+        <br/>
         Developer: Supercell
         <br /> Initial release date: 15 June 2017
         <br /> Mode: Multiplayer video game
@@ -23,6 +26,9 @@ const GameInfo = () => {
         game
         <br /> Platforms: Android, iOS, iPadOS
         <br /> Publisher: Supercell
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );

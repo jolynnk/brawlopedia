@@ -32,7 +32,7 @@ img {
 }
 
 .card-title {
-  font-family: Permanent Marker;
+  font-family: Anton;
   font-size: 25px;
 }
 
@@ -42,11 +42,12 @@ img {
 
 .card-text {
   font-size: 15px;
+  font-family: Roboto;
 }
 
 .card {
   margin: 10px;
-  background-color: #ffcb52;
+  background-color: #fed065;
   position: relative;
   left: 52px;
   text-align: center;
@@ -69,15 +70,29 @@ button {
 }
 
 .detailsName {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
+  font-family: Anton;
 }
 
 .detailsBrawlerType {
   font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
   color: rgb(167, 9, 167);
 }
 
 .aboutPage {
   text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.comparePage {
+  text-align: center;
+  font-family: Roboto;
+}
+
+#gameImage {
+  padding: 50px;
 }

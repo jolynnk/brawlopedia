@@ -5,6 +5,7 @@ import Comparison from "./components/Comparison";
 import NavBar from "./components/NavBar";
 import GameModes from "./components/GameModes";
 import GameInfo from "./components/GameInfo";
+import Maps from "./components/Maps";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/gameinfo" element={<GameInfo></GameInfo>}></Route>
         <Route path="/mainpage" element={<Mainpage></Mainpage>}></Route>
         <Route path="/gamemodes" element={<GameModes></GameModes>}></Route>
+        <Route path="/maps" element={<Maps></Maps>}></Route>
         <Route path="/comparison" element={<Comparison></Comparison>}></Route>
       </Routes>
     </div>

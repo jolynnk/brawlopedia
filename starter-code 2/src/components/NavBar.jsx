@@ -34,6 +34,14 @@ const NavBar = () => {
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/maps"
+            >
+              Maps
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
               to="/comparison"
             >
               Compare Brawlers
