@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from "react";
 import CharInfo from "./CharInfo";
-import Details from "./Details";
-import GameModes from "./GameModes";
 
 const Mainpage = () => {
   const [charInfo, setCharInfo] = useState([]);
+  // const [data, setData] = useState(charInfo);
+  // const [sortOrder, setSortOrder] = useState("ascending");
+
+  //sorting function
+  // const handleSort = () => {
+  //   const sortedData = [...data].sort((a, b) => {
+  //     if (sortOrder === "ascending") {
+  //       return a.name.localeCompare(b.name);
+  //     } else {
+  //       return b.name.localeCompare(a.name);
+  //     }
+  //   });
+
+  //   setData(sortedData);
+  //   setSortOrder(sortOrder === "ascending" ? "descending" : "ascending");
+  // };
 
   //get character info
   const getData = async () => {
@@ -20,6 +34,23 @@ const Mainpage = () => {
   return (
     <>
       {/* <h2>{JSON.stringify(charInfo.list)}</h2> */}
+      {/* <select>
+        {charInfo.map((item) => (
+          <option key={item.name}>{item.name}</option>
+        ))}
+      </select> */}
+
+      {/* <div className="container">
+        <p>Sort Alphabetically</p>
+        <button onClick={handleSort}>
+          Sort {sortOrder === "ascending" ? "Descending" : "Ascending"}
+        </button>
+        <ul>
+          {charInfo.map((item, index) => (
+            <li key={index}>{item.name}</li>
+          ))}
+        </ul>
+      </div> */}
 
       <div className="row">
         {charInfo.map((item) => {
@@ -35,10 +66,13 @@ const Mainpage = () => {
               gadgetName2={item.gadgets[1].name}
               gadgetDesc1={item.gadgets[0].description}
               gadgetDesc2={item.gadgets[1].description}
+              gadgetImage={item.gadgets[0].imageUrl}
               starPowerName1={item.starPowers[0].name}
               starPowerName2={item.starPowers[1].name}
               starPowerDesc1={item.starPowers[0].description}
               starPowerDesc2={item.starPowers[1].description}
+              starPowerImage={item.starPowers[0].imageUrl}
+              charInfo={charInfo}
             ></CharInfo>
           );
         })}

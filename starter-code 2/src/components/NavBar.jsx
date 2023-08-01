@@ -7,6 +7,14 @@ const NavBar = () => {
     <header className={styles.navbar}>
       <nav>
         <ul>
+        <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/gameinfo"
+            >
+              Game Info
+            </NavLink>
+          </li>
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
@@ -29,14 +37,6 @@ const NavBar = () => {
               to="/comparison"
             >
               Compare Brawlers
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={(navData) => (navData.isActive ? styles.active : "")}
-              to="/details"
-            >
-              Details
             </NavLink>
           </li>
         </ul>

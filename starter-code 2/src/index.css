@@ -40,14 +40,44 @@ img {
   text-align: center;
 }
 
+.card-text {
+  font-size: 15px;
+}
+
 .card {
   margin: 10px;
   background-color: #ffcb52;
   position: relative;
   left: 52px;
+  text-align: center;
 }
 
 button {
   /* background-color: #2e93f5; */
   color: white;
+}
+
+.detailsImage {
+  width: 170px;
+  margin: auto;
+}
+
+.gadgetImage {
+  width: 70px;
+  position: relative;
+  bottom: 25px;
+}
+
+.detailsName {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.detailsBrawlerType {
+  font-style: italic;
+  color: rgb(167, 9, 167);
+}
+
+.aboutPage {
+  text-align: center;
 }
