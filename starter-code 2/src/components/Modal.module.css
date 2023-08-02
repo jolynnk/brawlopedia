@@ -10,9 +10,10 @@
 
 .modal {
   position: fixed;
-  background: white;
+  background: #d6bff6;
+  border: #7f4fc9 3px solid;
   top: 10vh;
-  bottom: 2vh;
+  bottom: 1vh;
   left: 10%;
   width: 80%;
   z-index: 100;
@@ -20,5 +21,4 @@
   text-align: center;
   font-family: Roboto;
   font-weight: bold;
-  /* background: #4be7ff; */
 }
