@@ -10,8 +10,8 @@
 
 .modal {
   position: fixed;
-  background: #d6bff6;
-  border: #7f4fc9 3px solid;
+  background: #f1f1f1;
+  border: #0c5eec 3px solid;
   top: 10vh;
   bottom: 1vh;
   left: 10%;

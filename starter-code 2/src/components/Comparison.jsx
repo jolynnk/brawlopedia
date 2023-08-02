@@ -17,6 +17,8 @@ const Comparison = () => {
   }, []);
 
   //search function for 2 input fields
+  //if either input fields are empty, display all items
+  //else, check if char name (in lower case) is = to search query for both inputs
   const checkSearch = (item) => {
     if (search1.toLowerCase() === "" || search2.toLowerCase() === "") {
       return item;
@@ -30,14 +32,6 @@ const Comparison = () => {
 
   return (
     <>
-      {/* <select>
-        {charInfo.map((item) => (
-          <option value={item.name}>{item.name}</option>
-        ))}
-      </select>
-      <button className="btn btn-primary" onClick={handleSubmit}>
-        Compare
-      </button> */}
       <p className="inputInstructions">
         Input Brawler names to compare their details
       </p>
@@ -65,7 +59,6 @@ const Comparison = () => {
 
       <div className="row compareHeader">
         <div className="col-sm-1">Brawler</div>
-        {/* <div className="col-sm-1">Type</div> */}
         <div className="col-sm-1">Gadget 1</div>
         <div className="col-sm-1">Details</div>
         <div className="col-sm-1">Gadget 2</div>

@@ -147,3 +147,7 @@ button {
   position: relative;
   left: 63px;
 }
+
+.active {
+  background-color: #b22b13;
+}

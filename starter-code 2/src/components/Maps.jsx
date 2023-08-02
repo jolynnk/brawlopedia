@@ -22,10 +22,12 @@ const Maps = () => {
     setActiveFilter(filter);
   };
 
+  //if activeFilter has truthy value (i.e. a filter was selected),filter iterator will run thru maps array and put into filteredMaps variable all items that are equivalent to activeFilter value. if activeFilter is falsey, display all items.
   const filteredMaps = activeFilter
     ? maps.filter((item) => item.gameMode.name === activeFilter)
     : maps;
 
+  //filter button options
   const filterOptions = [
     "Bounty",
     "Wipeout",
@@ -50,9 +52,9 @@ const Maps = () => {
       <p className="inputInstructions">Filter by game mode</p>
       <div>
         <MapFilterButtons
-          filters={filterOptions}
+          filterOptions={filterOptions}
           activeFilter={activeFilter}
-          onFilterClick={handleFilterClick}
+          handleFilterClick={handleFilterClick}
         ></MapFilterButtons>
       </div>
 

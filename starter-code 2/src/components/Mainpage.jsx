@@ -25,7 +25,7 @@ const Mainpage = () => {
       {/* <h2>{JSON.stringify(charInfo.list)}</h2> */}
       <br />
       <br />
-      {/* filter function goes thru charInfo array. checks if search variable is an empty string, if it is then condition is true and item will be included in filtered result. if false, will check if item text includes search variable */}
+      {/* filter function goes thru each item in charInfo array. checks if search variable is an empty string, if it is then condition is true and items will be included in filtered result. if false meaning search variable has text, will check if item text includes search variable text */}
       {/* search function reference: https://www.youtube.com/watch?v=xAqCEBFGdYk */}
       <div className="row">
         {charInfo

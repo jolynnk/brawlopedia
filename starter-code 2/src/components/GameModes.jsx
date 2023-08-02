@@ -17,8 +17,8 @@ const GameModes = (props) => {
 
   return (
     <>
-    <br />
-    <br/>
+      <br />
+      <br />
       <div className="row">
         {gameModes.map((item) => {
           return (

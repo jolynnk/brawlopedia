@@ -5,7 +5,6 @@ const ComparisonDisplay = (props) => {
     <>
       <div className="row compareList">
         <div className="col-sm-1">{props.name}</div>
-        {/* <div className="col-sm-1">{props.brawlerType}</div> */}
         <div className="col-sm-1">{props.gadgetName1}</div>
         <div className="col-sm-1">{props.gadgetDesc1}</div>
         <div className="col-sm-1">{props.gadgetName2}</div>
