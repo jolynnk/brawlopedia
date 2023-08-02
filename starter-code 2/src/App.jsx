@@ -10,7 +10,14 @@ import Maps from "./components/Maps";
 function App() {
   return (
     <div className="container">
-      <h1>Braaawlopedia</h1>
+      <div className="row">
+        <div className="col-md-4"></div>
+        <div className="col-md-4">
+          <img src="brawlopedia_logo.png" width="300px" className="logo"></img>
+        </div>
+        <div className="col-md-4"></div>
+      </div>
+
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Navigate replace to="/mainpage" />} />

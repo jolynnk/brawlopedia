@@ -47,7 +47,7 @@ const Maps = () => {
 
   return (
     <>
-      <p className="inputInstructions">Filter by map type</p>
+      <p className="inputInstructions">Filter by game mode</p>
       <div>
         <MapFilterButtons
           filters={filterOptions}
