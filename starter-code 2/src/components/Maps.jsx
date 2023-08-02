@@ -18,11 +18,12 @@ const Maps = () => {
   });
 
   //reference for filter function: ChatGPT (question asked: "how to create search filter buttons in react")
+  //function updates activeFilter state with filter that has been selected
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
   };
 
-  //if activeFilter has truthy value (i.e. a filter was selected),filter iterator will run thru maps array and put into filteredMaps variable all items that are equivalent to activeFilter value. if activeFilter is falsey, display all items.
+  //if activeFilter state has truthy value (i.e. filter button was clicked), filter iterator will run thru maps array and put into filteredMaps variable all items that are equivalent to activeFilter value. if activeFilter is falsey, display all items.
   const filteredMaps = activeFilter
     ? maps.filter((item) => item.gameMode.name === activeFilter)
     : maps;
@@ -58,6 +59,7 @@ const Maps = () => {
         ></MapFilterButtons>
       </div>
 
+      {/* prop down and display the items in filteredMaps array */}
       <div className="row">
         {filteredMaps.map((item) => (
           <MapsDisplay

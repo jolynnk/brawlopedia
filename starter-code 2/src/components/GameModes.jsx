@@ -23,7 +23,7 @@ const GameModes = (props) => {
         {gameModes.map((item) => {
           return (
             <GameModesDisplay
-              key={item.id}
+              key={item.name}
               id={item.id}
               gameName={item.name}
               gameImage={item.imageUrl}
