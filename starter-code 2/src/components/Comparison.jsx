@@ -3,7 +3,8 @@ import ComparisonDisplay from "./ComparisonDisplay";
 
 const Comparison = () => {
   const [charInfo, setCharInfo] = useState([]);
-  const [selectedChar, setSelectedChar] = useState([]);
+  const [search1, setSearch1] = useState("");
+  const [search2, setSearch2] = useState("");
 
   const getData = async () => {
     const res = await fetch("https://api.brawlapi.com/v1/brawlers");
@@ -11,34 +12,44 @@ const Comparison = () => {
     setCharInfo(data.list);
   };
 
-  console.log(charInfo);
-
   useEffect(() => {
     getData();
   }, []);
 
-  // const addToCompare = (item) => {
-  //   setSelectedChar((selectedChar) => [...selectedChar, item]);
-  // };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSelectedChar((currState) => {
-      return [...currState, { charInfo }];
-    });
+  const checkSearch = (item) => {
+    if (search1.toLowerCase() === "" || search2.toLowerCase() === "") {
+      return item;
+    } else {
+      return (
+        item.name.toLowerCase().includes(search1) ||
+        item.name.toLowerCase().includes(search2)
+      );
+    }
   };
 
   return (
     <>
       <br />
-      <select>
+      {/* <select>
         {charInfo.map((item) => (
           <option value={item.name}>{item.name}</option>
         ))}
       </select>
       <button className="btn btn-primary" onClick={handleSubmit}>
         Compare
-      </button>
+      </button> */}
+
+      <input
+        className="compareInput"
+        onChange={(event) => setSearch1(event.target.value)}
+        placeholder="Compare Brawler 1"
+      ></input>
+
+      <input
+        className="compareInput"
+        onChange={(event) => setSearch2(event.target.value)}
+        placeholder="Compare Brawler 2"
+      ></input>
 
       <div className="row compareHeader">
         <div className="col-md-2">Brawler</div>
@@ -49,64 +60,30 @@ const Comparison = () => {
         <div className="col-md-2">Star Power 2</div>
       </div>
 
-      {charInfo.map((item) => {
-        return (
-          <ComparisonDisplay
-            key={item.id}
-            id={item.id}
-            image={item.imageUrl2}
-            name={item.name}
-            brawlerType={item.class.name}
-            gadgetName1={item.gadgets[0].name}
-            gadgetName2={item.gadgets[1].name}
-            gadgetDesc1={item.gadgets[0].description}
-            gadgetDesc2={item.gadgets[1].description}
-            gadgetImage={item.gadgets[0].imageUrl}
-            starPowerName1={item.starPowers[0].name}
-            starPowerName2={item.starPowers[1].name}
-            starPowerDesc1={item.starPowers[0].description}
-            starPowerDesc2={item.starPowers[1].description}
-            starPowerImage={item.starPowers[0].imageUrl}
-            charInfo={charInfo}
-          ></ComparisonDisplay>
-        );
-      })}
-
-      {/* <div className="row">
-        <div className="col-md-4">Brawler</div>
-        <div className="col-md-4">Gadgets</div>
-        <div className="col-md-4">Star Powers</div>
+      <div>
+        {charInfo.filter(checkSearch).map((item) => {
+          return (
+            <ComparisonDisplay
+              key={item.id}
+              id={item.id}
+              image={item.imageUrl2}
+              name={item.name}
+              brawlerType={item.class.name}
+              gadgetName1={item.gadgets[0].name}
+              gadgetName2={item.gadgets[1].name}
+              gadgetDesc1={item.gadgets[0].description}
+              gadgetDesc2={item.gadgets[1].description}
+              gadgetImage={item.gadgets[0].imageUrl}
+              starPowerName1={item.starPowers[0].name}
+              starPowerName2={item.starPowers[1].name}
+              starPowerDesc1={item.starPowers[0].description}
+              starPowerDesc2={item.starPowers[1].description}
+              starPowerImage={item.starPowers[0].imageUrl}
+              charInfo={charInfo}
+            ></ComparisonDisplay>
+          );
+        })}
       </div>
-      <div className="row">
-        {selectedChar.map((item) => (
-          <div className="col-md-4" key={item.id}>
-            {item.name}
-          </div>
-        ))}
-        {selectedChar.map((item) => (
-          <div className="col-md-4" key={item.id}>
-            {item.name}
-          </div>
-        ))}
-        {selectedChar.map((item) => (
-          <div className="col-md-4" key={item.id}>
-            {item.name}
-          </div>
-        ))}
-      </div>
-      {charInfo.map((item) => {
-        <ComparisonDisplay
-          key={item.id}
-          item={item}
-          selected={selectedChar}
-          addToCompare={addToCompare}
-        ></ComparisonDisplay>;
-      })} */}
-      {/* <br />
-      <br />
-      <h5 className="comparePage">
-        We're working on this feature. Stay tuned!
-      </h5> */}
     </>
   );
 };

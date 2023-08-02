@@ -106,3 +106,7 @@ input {
   text-align: center;
   margin: 30px 558px 0px 558px;
 }
+
+.compareInput {
+  display: inline;
+}
