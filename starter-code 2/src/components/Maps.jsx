@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import MapsDisplay from "./MapsDisplay";
+import MapFilterButtons from "./MapFilterButtons";
 
 const Maps = () => {
   const [maps, setMaps] = useState([]);
-  const [search, setSearch] = useState("");
+  const [activeFilter, setActiveFilter] = useState("");
 
   //get maps info
   const getMaps = async () => {
@@ -16,33 +17,56 @@ const Maps = () => {
     getMaps();
   });
 
+  //reference for filter function: ChatGPT (question asked: "how to create search filter buttons in react")
+  const handleFilterClick = (filter) => {
+    setActiveFilter(filter);
+  };
+
+  const filteredMaps = activeFilter
+    ? maps.filter((item) => item.gameMode.name === activeFilter)
+    : maps;
+
+  const filterOptions = [
+    "Bounty",
+    "Wipeout",
+    "Knockout",
+    "Brawl Ball",
+    "Hot Zone",
+    "Boss Fight",
+    "Solo Showdown",
+    "Duo Showdown",
+    "Gem Grab",
+    "Takedown",
+    "Heist",
+    "Robo Rumble",
+    "Payload",
+    "Volley Brawl",
+    "Big Game",
+    "Basket Brawl",
+  ];
+
   return (
     <>
-      <input
-        onChange={(event) => setSearch(event.target.value)}
-        placeholder="Search Map Type"
-      ></input>
-      <br />
-      <br />
+      <p className="inputInstructions">Filter by map type</p>
+      <div>
+        <MapFilterButtons
+          filters={filterOptions}
+          activeFilter={activeFilter}
+          onFilterClick={handleFilterClick}
+        ></MapFilterButtons>
+      </div>
+
       <div className="row">
-        {maps
-          .filter((item) => {
-            return search.toLowerCase() === ""
-              ? item
-              : item.gameMode.name.toLowerCase().includes(search);
-          })
-          .map((item) => {
-            return (
-              <MapsDisplay
-                key={item.id}
-                id={item.id}
-                mapName={item.name}
-                mapImage={item.imageUrl}
-                mapModeName={item.gameMode.name}
-                mapModeIcon={item.gameMode.imageUrl}
-              ></MapsDisplay>
-            );
-          })}
+        {filteredMaps.map((item) => (
+          <MapsDisplay
+            key={item.id}
+            id={item.id}
+            mapName={item.name}
+            mapImage={item.imageUrl}
+            mapModeName={item.gameMode.name}
+            mapModeIcon={item.gameMode.imageUrl}
+          ></MapsDisplay>
+        ))}
       </div>
     </>
   );

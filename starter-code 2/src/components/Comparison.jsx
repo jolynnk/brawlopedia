@@ -16,6 +16,7 @@ const Comparison = () => {
     getData();
   }, []);
 
+  //search function for 2 input fields
   const checkSearch = (item) => {
     if (search1.toLowerCase() === "" || search2.toLowerCase() === "") {
       return item;
@@ -29,7 +30,6 @@ const Comparison = () => {
 
   return (
     <>
-      <br />
       {/* <select>
         {charInfo.map((item) => (
           <option value={item.name}>{item.name}</option>
@@ -38,27 +38,44 @@ const Comparison = () => {
       <button className="btn btn-primary" onClick={handleSubmit}>
         Compare
       </button> */}
-
-      <input
-        className="compareInput"
-        onChange={(event) => setSearch1(event.target.value)}
-        placeholder="Compare Brawler 1"
-      ></input>
-
-      <input
-        className="compareInput"
-        onChange={(event) => setSearch2(event.target.value)}
-        placeholder="Compare Brawler 2"
-      ></input>
+      <p className="inputInstructions">
+        Input Brawler names to compare their details
+      </p>
+      <div className="row">
+        <div className="col-md-2"></div>
+        <div className="col-md-2"></div>
+        <div className="col-md-2">
+          <input
+            className="compareInput compareInput1"
+            onChange={(event) => setSearch1(event.target.value)}
+            placeholder="Compare Brawler 1"
+          ></input>
+        </div>
+        <div className="col-md-2">
+          <input
+            className="compareInput compareInput2"
+            onChange={(event) => setSearch2(event.target.value)}
+            placeholder="Compare Brawler 2"
+          ></input>
+        </div>
+        <div className="col-md-2"></div>
+        <div className="col-md-2"></div>
+      </div>
+      <br />
 
       <div className="row compareHeader">
-        <div className="col-md-2">Brawler</div>
-        <div className="col-md-2">Type</div>
-        <div className="col-md-2">Gadget 1</div>
-        <div className="col-md-2">Gadget 2</div>
-        <div className="col-md-2">Star Power 1</div>
-        <div className="col-md-2">Star Power 2</div>
+        <div className="col-sm-1">Brawler</div>
+        {/* <div className="col-sm-1">Type</div> */}
+        <div className="col-sm-1">Gadget 1</div>
+        <div className="col-sm-1">Details</div>
+        <div className="col-sm-1">Gadget 2</div>
+        <div className="col-sm-2">Details</div>
+        <div className="col-sm-1">Star Power 1</div>
+        <div className="col-sm-2">Details</div>
+        <div className="col-sm-1">Star Power 2</div>
+        <div className="col-sm-2">Details</div>
       </div>
+      <br />
 
       <div>
         {charInfo.filter(checkSearch).map((item) => {
