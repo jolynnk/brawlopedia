@@ -6,6 +6,7 @@ const Comparison = () => {
   const [search1, setSearch1] = useState("");
   const [search2, setSearch2] = useState("");
 
+  //get character info
   const getData = async () => {
     const res = await fetch("https://api.brawlapi.com/v1/brawlers");
     const data = await res.json();

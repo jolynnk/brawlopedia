@@ -18,7 +18,7 @@ const Maps = () => {
   });
 
   //reference for filter function: ChatGPT (question asked: "how to create search filter buttons in react")
-  //function updates activeFilter state with filter that has been selected
+  //function updates activeFilter state to the filter that has been selected
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
   };
