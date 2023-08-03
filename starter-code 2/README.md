@@ -2,11 +2,15 @@
 
 A Brawl Stars Encyclopedia
 
-## Brief description
+## The Challenge
+
+Using React, develop a simple web application that fetches data from an API and displays it for the user.
+
+## Brief Description
 
 Brawlopedia provides all-you-need-to-know information about the popular Brawl Stars game, developed by Supercell. Content includes the list of brawlers and specific details such as their type, gadgets and star powers, as well as game modes and maps. There is also a function where the details of 2 brawlers can be compared side by side.
 
-## Technologies used
+## Technologies Used
 
 - React
 - Javascript
@@ -39,6 +43,12 @@ Brawlopedia provides all-you-need-to-know information about the popular Brawl St
 ### Compare Brawlers page with comparison search function
 
 ![Compare Brawlers page with comparison search function](CompareBrawlers.png)
+
+## Next Steps
+
+- Include short videos of actual gameplay
+- Include a list of health and damage points per Brawler level
+- Include information on Brawler movement speed and reload time
 
 ## Contact
 
