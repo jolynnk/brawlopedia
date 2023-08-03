@@ -8,6 +8,7 @@ A Brawl Stars Encyclopedia
 - [Technologies Used](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#technologies-used)
 - [Website Wireframe](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#website-wireframe)
 - [Screenshots](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#screenshots)
+- [API Source](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#api-source)
 - [Next Steps](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#next-steps)
 - [Contact](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#contact)
 
@@ -53,10 +54,8 @@ Brawlopedia provides all-you-need-to-know information about the popular Brawl St
 
 ![Compare Brawlers page with comparison search function](CompareBrawlers.png)
 
-## API Endpoints
-[Brawlers](https://api.brawlapi.com/v1/brawlers)
-[Game Modes](https://api.brawlapi.com/v1/gamemodes)
-[Maps](https://api.brawlapi.com/v1/maps)
+## API Source
+[BrawlAPI](https://brawlapi.com/#/)
 
 ## Next Steps
 
