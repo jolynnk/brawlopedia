@@ -3,11 +3,13 @@
 A Brawl Stars Encyclopedia
 
 ## Table of Contents
-[The Challenge](#markdown-header-the-challenge)
-[Text](https://github.com/jolynnk/brawlopedia#brief-description)
-[Text](link)
-[Text](link)
-[Text](link)
+[The Challenge](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#the-challenge)
+[Brief Description](https://github.com/jolynnk/brawlopedia#brief-description)
+[Technologies Used](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#technologies-used)
+[Website Wireframe](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#website-wireframe)
+[Screenshots](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#screenshots)
+[Next Steps](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#next-steps)
+[Contact](https://github.com/jolynnk/brawlopedia/blob/main/starter-code%202/README.md#contact)
 
 ## The Challenge
 
