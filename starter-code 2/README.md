@@ -3,7 +3,7 @@
 A Brawl Stars Encyclopedia
 
 ## Table of Contents
-[The Challenge](https://github.com/jolynnk/brawlopedia#the-challenge)
+[The Challenge](#markdown-header-the-challenge)
 [Text](https://github.com/jolynnk/brawlopedia#brief-description)
 [Text](link)
 [Text](link)
