@@ -13,7 +13,11 @@ function App() {
       <div className="row">
         <div className="col-md-4"></div>
         <div className="col-md-4">
-          <img src="brawlopedia_logo.png" width="300px" className="logo"></img>
+          <img
+            src="../brawlopedia_logo.png"
+            width="300px"
+            className="logo"
+          ></img>
         </div>
         <div className="col-md-4"></div>
       </div>

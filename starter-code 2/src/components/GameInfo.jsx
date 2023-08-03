@@ -5,7 +5,7 @@ const GameInfo = () => {
     <>
       <br />
       <div className="aboutPage">
-        <img src="brawlstarswallpaper.jpg" width="500px"></img>
+        <img src="../brawlstarswallpaper.jpg" width="500px"></img>
         <div>
           Brawl Stars is a multiplayer online battle arena and third-person hero
           shooter video game developed and published by
@@ -16,7 +16,7 @@ const GameInfo = () => {
         </div>
         <br />
         <hr></hr>
-        <br/>
+        <br />
         Developer: Supercell
         <br /> Initial release date: 15 June 2017
         <br /> Mode: Multiplayer video game
