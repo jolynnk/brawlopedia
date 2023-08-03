@@ -26,11 +26,11 @@ Brawlopedia provides all-you-need-to-know information about the popular Brawl St
 
 ### Game Info page
 
-![Game Info page](BrawlerList.png)
+![Game Info page](GameInfo.png)
 
 ### Brawler List page with search function
 
-![Brawler List page with search function](GameInfo.png)
+![Brawler List page with search function](BrawlerList.png)
 
 ### Game Modes page
 
@@ -46,6 +46,7 @@ Brawlopedia provides all-you-need-to-know information about the popular Brawl St
 
 ## Next Steps
 
+- Optimise web application for mobile
 - Include short videos of actual gameplay
 - Include a list of health and damage points per Brawler level
 - Include information on Brawler movement speed and reload time
