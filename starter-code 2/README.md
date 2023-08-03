@@ -2,6 +2,13 @@
 
 A Brawl Stars Encyclopedia
 
+## Table of Contents
+[The Challenge](https://github.com/jolynnk/brawlopedia#the-challenge)
+[Text](https://github.com/jolynnk/brawlopedia#brief-description)
+[Text](link)
+[Text](link)
+[Text](link)
+
 ## The Challenge
 
 Using React, develop a simple web application that fetches data from an API and displays it for the user.
