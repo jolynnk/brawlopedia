@@ -10,6 +10,9 @@ const Mainpage = () => {
     const res = await fetch("https://api.brawlapi.com/v1/brawlers");
     const data = await res.json();
     setCharInfo(data.list);
+    console.log(data);
+
+    console.log(data.list);
   };
 
   useEffect(() => {
